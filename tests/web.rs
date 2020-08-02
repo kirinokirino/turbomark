@@ -4,7 +4,7 @@
 
 extern crate wasm_bindgen_test;
 use wasm_bindgen_test::*;
-use micromark::parse_markdown;
+use turbomark::parse_markdown;
 
 wasm_bindgen_test_configure!(run_in_browser);
 

@@ -36,10 +36,12 @@ wee_alloc = { version = "0.4.5", optional = true }
 wasm-bindgen-test = "0.3.17"
 
 [profile.release]
-opt-level = 3
+opt-level = "s"
 lto = true
 
 [package.metadata.wasm-pack.profile.release]
 # currently there is a bug, wasm-opt by hand with:
-# wasm-opt ./pkg/turbomark_bg.wasm -o ./pkg/turbomark_bg.wasm -O --enable-mutable-globals
+# wasm-opt ./pkg/turbomark_bg.wasm -o ./pkg/turbomark_bg.wasm -Os --enable-mutable-globals
+# -O is for default optimisation (-O0 -O1 -O2 -O3 -O4 for speed, -Os and -Oz for size)
+# see wasm-opt --help
 wasm-opt = false

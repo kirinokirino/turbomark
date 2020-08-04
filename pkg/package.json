@@ -1,0 +1,20 @@
+{
+  "name": "turbomark",
+  "collaborators": [
+    "kirinokirino <kirinokirino@lunariko.com>"
+  ],
+  "description": "Wasm target for pulldown-cmark.",
+  "version": "0.1.5",
+  "license": "mit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirinokirino/turbomark"
+  },
+  "files": [
+    "turbomark_bg.wasm",
+    "turbomark.js",
+    "turbomark.d.ts"
+  ],
+  "browser": "turbomark.js",
+  "types": "turbomark.d.ts"
+}
